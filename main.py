@@ -12,4 +12,4 @@ def getAbout():
 @app.route("/contact")
 def contact():
   return render_template('contact.html', phone = 87654321)  
-app.run(host='0.0.0.0', port=8020)
+app.run(host='0.0.0.0', port=8020, Threaded=True, debug=True)
